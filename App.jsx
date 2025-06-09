@@ -573,12 +573,12 @@ function App() {
         <h1 className={`text-3xl sm:text-4xl md:text-6xl font-bold mb-4 animate-fade-in gradient-text ${
           isDarkMode ? 'text-gray-100' : 'text-gray-800'
         }`}>
-          {isCountUp ? '时间计数器' : '高考倒计时'}
+          {isCountUp ? 'Beiyao的' : '高考倒计时'}
         </h1>
         <p className={`text-base sm:text-lg md:text-xl animate-fade-in-delay ${
           isDarkMode ? 'text-gray-300' : 'text-gray-600'
         }`}>
-          为梦想加油，向未来出发！
+          距离高考和杂七杂八的时间还有
         </p>
       </header>
 
@@ -1031,7 +1031,7 @@ function App() {
                 isDarkMode ? 'text-gray-200' : 'text-gray-700'
               }`}>
                 <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
-                祝福留言
+                对我说什么
               </CardTitle>
               {isAuthenticated && (
                 <Button
@@ -1060,7 +1060,7 @@ function App() {
                   }`}
                 />
                 <Textarea
-                  placeholder="写下您的祝福和鼓励..."
+                  placeholder="写下您想对我说的话.."
                   value={newMessage.content}
                   onChange={(e) => setNewMessage({ ...newMessage, content: e.target.value })}
                   maxLength={200}
@@ -1098,7 +1098,7 @@ function App() {
                 <p className={`text-center py-6 sm:py-8 ${
                   isDarkMode ? 'text-gray-400' : 'text-gray-500'
                 }`}>
-                  还没有留言，快来写下第一条祝福吧！
+                  还没有留言，快来写下第一条留言吧！
                 </p>
               ) : (
                 getFilteredMessages().map((message) => (
@@ -1175,29 +1175,29 @@ function App() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 mb-4 text-sm sm:text-base">
             <a 
-              href="https://github.com" 
+              href="https://beiyaoo.top" 
               target="_blank" 
               rel="noopener noreferrer"
               className={`hover:underline transition-colors ${
                 isDarkMode ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-500'
               }`}
             >
-              <strong>GitHub</strong> 源码
+              <strong>Beiyao</strong> 的网站
             </a>
             <span className="hidden sm:inline">|</span>
             <a 
-              href="https://example.com" 
+              href="https://doing.beiyaoo.top" 
               target="_blank" 
               rel="noopener noreferrer"
               className={`hover:underline transition-colors ${
                 isDarkMode ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-500'
               }`}
             >
-              项目<em>介绍</em>
+              beiyao<em>在干嘛</em>
             </a>
             <span className="hidden sm:inline">|</span>
             <a 
-              href="mailto:contact@example.com"
+              href="mailto:beiyao.chen@qq.com"
               className={`hover:underline transition-colors ${
                 isDarkMode ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-500'
               }`}
@@ -1206,9 +1206,9 @@ function App() {
             </a>
           </div>
           <div className="text-xs sm:text-sm space-y-2">
-            {renderHTMLContent('<p>支持 <strong>HTML</strong> 和 <em>基础标记</em> 语法</p>')}
-            <p>&copy; 2025 高考倒计时网页 | 为每一个追梦的你加油！</p>
-            <p className="text-xs">管理密钥：admin2025（仅用于演示）</p>
+            {renderHTMLContent('<p></p>')}
+            <p>&copy; 助我高考顺利</p>
+            <p className="text-xs">）</p>
           </div>
         </div>
       </footer>
@@ -1217,4 +1217,3 @@ function App() {
 }
 
 export default App
-
